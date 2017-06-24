@@ -72,7 +72,7 @@ gulp.task('reversion', ['dist:css', 'dist:js'], function () {
 
 // 替换版本号  
 
-gulp.task('index', ['reversion'], function () {
+gulp.task('build', ['reversion'], function () {
   var manifest = gulp.src('./dist/rev-manifest.json')
   return gulp.src('src/index.html')
     .pipe(revReplace({
