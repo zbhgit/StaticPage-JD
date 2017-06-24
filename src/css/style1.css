@@ -1,0 +1,7 @@
+.wrapper {
+  width: 400px;
+  height: 300px;
+  background: #333;
+  text-align: center; }
+  .wrapper h1 {
+    color: #fff; }
