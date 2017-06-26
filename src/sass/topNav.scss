@@ -1,0 +1,65 @@
+.top-nav {
+  background-color: #e3e4e5;
+  border-bottom: 1px solid #dddddd;
+  color: #999999;
+  .address {
+    height: 30px;
+    line-height: 30px;
+    margin-left: 200px;
+    .icon-address {
+      vertical-align: middle;
+      color: red;
+      margin-top: -2px;
+    }
+  }
+  .nav-item {
+    height: 30px;
+    line-height: 30px;
+    li {
+      float: left;
+      a {
+        padding: 0 14px;
+        line-height: 1;
+        border-right: 1px solid #ccc;
+        &:hover {
+          color: #f10215;
+        }
+      }
+      &:last-child {
+        a {
+          border-right: none;
+        }
+      }
+      .icon-down {
+        font-size: 12px;
+        vertical-align: top;
+        padding-left: 5px;
+      }
+      .mobileApp {
+        position: relative;
+        padding-left: 7px;
+        img {
+          width: 67px;
+          height: 67px;
+          border:1px solid #cfcfcf;
+        }
+        &:after {
+          position: absolute;
+          top: -8px;
+          left: 31px;
+          content: "";
+          display: block;
+          width: 0px;
+          height: 0px;
+          border-top: none;
+          border-right:10px solid transparent;
+          border-bottom: 10px solid #f6f6f6; 
+          border-left: 10px solid transparent;
+        }
+      }
+    }
+    .register {
+      color: #f10215;
+    }
+  }
+}

@@ -1,0 +1,50 @@
+.top-nav {
+  background-color: #e3e4e5;
+  border-bottom: 1px solid #dddddd;
+  color: #999999; }
+  .top-nav .address {
+    height: 30px;
+    line-height: 30px;
+    margin-left: 200px; }
+    .top-nav .address .icon-address {
+      vertical-align: middle;
+      color: red;
+      margin-top: -2px; }
+  .top-nav .nav-item {
+    height: 30px;
+    line-height: 30px; }
+    .top-nav .nav-item li {
+      float: left; }
+      .top-nav .nav-item li a {
+        padding: 0 14px;
+        line-height: 1;
+        border-right: 1px solid #ccc; }
+        .top-nav .nav-item li a:hover {
+          color: #f10215; }
+      .top-nav .nav-item li:last-child a {
+        border-right: none; }
+      .top-nav .nav-item li .icon-down {
+        font-size: 12px;
+        vertical-align: top;
+        padding-left: 5px; }
+      .top-nav .nav-item li .mobileApp {
+        position: relative;
+        padding-left: 7px; }
+        .top-nav .nav-item li .mobileApp img {
+          width: 67px;
+          height: 67px;
+          border: 1px solid #cfcfcf; }
+        .top-nav .nav-item li .mobileApp:after {
+          position: absolute;
+          top: -8px;
+          left: 31px;
+          content: "";
+          display: block;
+          width: 0px;
+          height: 0px;
+          border-top: none;
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid #f6f6f6;
+          border-left: 10px solid transparent; }
+    .top-nav .nav-item .register {
+      color: #f10215; }
