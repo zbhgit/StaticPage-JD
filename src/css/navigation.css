@@ -1,0 +1,61 @@
+.navigation {
+  margin-top: 1px; }
+  .navigation .side-nav {
+    float: left;
+    position: relative;
+    background-color: #6e6568;
+    width: 190px;
+    height: 480px;
+    color: #ffffff; }
+    .navigation .side-nav .nav-wrapper {
+      padding: 16px 0; }
+      .navigation .side-nav .nav-wrapper .nav-item {
+        padding-left: 12px;
+        font-size: 0;
+        height: 28px;
+        line-height: 28px; }
+        .navigation .side-nav .nav-wrapper .nav-item:hover {
+          background-color: #999395; }
+        .navigation .side-nav .nav-wrapper .nav-item a {
+          font-size: 14px; }
+          .navigation .side-nav .nav-wrapper .nav-item a:hover {
+            color: #bf1623; }
+        .navigation .side-nav .nav-wrapper .nav-item span {
+          padding: 0 4px;
+          font-size: 12px; }
+    .navigation .side-nav .nav-detail {
+      position: absolute;
+      top: 0;
+      left: 190px;
+      padding: 20px;
+      background-color: #fff;
+      width: 1000px;
+      min-height: 480px;
+      -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.3); }
+  .navigation .caousel {
+    float: left;
+    margin: 0 10px;
+    width: 790px;
+    height: 480px;
+    background-color: #333; }
+  .navigation .side-tool {
+    float: left;
+    width: 190px;
+    height: 480px;
+    background-color: #666; }
+
+.navigation .top-title {
+  overflow: hidden; }
+  .navigation .top-title a {
+    float: left;
+    margin-right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: #6e6568;
+    line-height: 24px; }
+    .navigation .top-title a:hover {
+      background-color: #5c5251; }
+  .navigation .top-title .icon-right {
+    padding: 0 4px;
+    font-size: 12px; }

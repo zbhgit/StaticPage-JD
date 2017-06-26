@@ -1,0 +1,77 @@
+.navigation {
+  margin-top: 1px;
+  .side-nav {
+    float: left;
+    position: relative;
+    background-color: #6e6568;
+    width: 190px;
+    height: 480px;
+    color: #ffffff;
+    .nav-wrapper {
+      padding: 16px 0;
+      .nav-item {
+        padding-left: 12px;
+        font-size: 0;
+        height: 28px;
+        line-height: 28px;
+        &:hover {
+          background-color: #999395;
+        }
+        a {
+          font-size: 14px;
+          &:hover {
+            color: #bf1623;
+          }
+        }
+        span {
+          padding: 0 4px;
+          font-size: 12px;
+        }
+      }
+    }
+    .nav-detail {
+      position: absolute;
+      top: 0;
+      left: 190px;
+      padding: 20px;
+      background-color: #fff;
+      width: 1190px - 190;
+      min-height: 480px;
+      box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+    }
+  }
+  .caousel {
+    float: left;
+    margin: 0 10px;
+    width: 1190px-400px;
+    height: 480px;
+    background-color: #333;
+  }
+  .side-tool {
+    float: left;
+    width: 190px;
+    height: 480px;
+    background-color: #666;
+  }
+}
+
+.navigation {
+  .top-title {
+    overflow: hidden;
+    a {
+      float: left;
+      margin-right: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      background-color: #6e6568;
+      line-height: 24px;
+      &:hover {
+        background-color: #5c5251;
+      }
+    }
+    .icon-right {
+      padding: 0 4px;
+      font-size: 12px;
+    }
+  }
+}
