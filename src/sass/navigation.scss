@@ -29,13 +29,14 @@
         }
       }
     }
-    .nav-detail {
+    .detail-wrapper {
+      display: block;
       position: absolute;
       top: 0;
       left: 190px;
-      padding: 20px;
       background-color: #fff;
       width: 1190px - 190;
+      height: 480px;
       min-height: 480px;
       box-shadow: 0 0 2px rgba(0, 0, 0, .3);
     }
@@ -63,8 +64,9 @@
       margin-right: 10px;
       padding-left: 10px;
       padding-right: 10px;
-      background-color: #6e6568;
+      height: 24px;
       line-height: 24px;
+      background-color: #6e6568;
       &:hover {
         background-color: #5c5251;
       }
@@ -72,6 +74,95 @@
     .icon-right {
       padding: 0 4px;
       font-size: 12px;
+    }
+  }
+  .details {
+    width: 780px;
+    height: 100%;
+    padding-top: 10px;
+    .details-item {
+      width: 100%;
+      color: #666666;
+      .title {
+        overflow: hidden;
+        float: left;
+        margin-right: 10px;
+        padding-top: 11px;
+        width: 70px;
+        line-height: 16px;
+        font-weight: 700;
+        text-align: right;
+        white-space: nowrap;
+        .icon-right {
+          padding-left: 9px;
+          font-weight: 200;
+          font-size: 12px;
+        }
+        &:hover {
+          color: #c81623;
+          .icon-right {
+            color: #c81623;
+          }
+        }
+      }
+      ul {
+        float: left;
+        width: 700px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-bottom: 1px solid #eeeeee;
+      }
+      li {
+        float: left;
+        border-left: 1px solid #eeeeee;
+        line-height: 16px;
+        padding: 0 10px;
+        margin: 6px 0;
+        a {
+          height: 16px;
+          margin: 8px 0;
+          &:hover {
+            color: #c81623;
+          }
+        }
+      }
+      &:last-child {
+        ul {
+          border-bottom: none;
+        }
+      }
+    }
+  }
+}
+
+// nav-detail 布局
+.nav-detail {
+  display: block;
+  position: absolute;
+  top: 0;
+  padding: 20px 16px 10px 20px;
+  background-color: #fff;
+  width: 1190px - 190 - 36;
+  min-height: 480px;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .3);
+  .brand {
+    background: #fff;
+    width: 168px;
+    height: 400px;
+    .litte-img {
+      img {
+        float: left;
+        margin-right: 1px;
+        padding-bottom: 1px;
+        vertical-align: top;
+      }
+    }
+    .big-img {
+      margin-top: 10px;
+      font-size: 0;
+      img {
+        padding-bottom: 1px;
+      }
     }
   }
 }

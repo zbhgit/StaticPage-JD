@@ -24,8 +24,10 @@
       .top-nav .nav-item li:last-child a {
         border-right: none; }
       .top-nav .nav-item li .icon-down {
+        position: relative;
+        top: -2px;
         font-size: 12px;
-        vertical-align: top;
+        vertical-align: middle;
         padding-left: 5px; }
       .top-nav .nav-item li .mobileApp {
         position: relative;
