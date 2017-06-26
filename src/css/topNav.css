@@ -5,7 +5,7 @@
   .top-nav .address {
     height: 30px;
     line-height: 30px;
-    margin-left: 200px; }
+    margin-left: 210px; }
     .top-nav .address .icon-address {
       vertical-align: middle;
       color: red;
@@ -31,8 +31,9 @@
         position: relative;
         padding-left: 7px; }
         .top-nav .nav-item li .mobileApp img {
-          width: 67px;
-          height: 67px;
+          padding: 4px;
+          width: 59px;
+          height: 59px;
           border: 1px solid #cfcfcf; }
         .top-nav .nav-item li .mobileApp:after {
           position: absolute;

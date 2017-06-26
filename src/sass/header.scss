@@ -1,0 +1,115 @@
+.header {
+  position: relative;
+  padding-top: 25px;
+  height: 114px;
+  .search-wrapper {
+    margin: 0 auto;
+    width: 550px;
+    .search {
+      position: relative;
+      input {
+        padding-left: 4px;
+        height: 33px;
+        line-height: 33px;
+        width: 494px;
+        border: 1px solid #f10316;
+      }
+      .icon-camera {
+        position: absolute;
+        top: 4px;
+        right: 64px;
+        font-size: 20px;
+        color: #828282;
+      }
+      .icon-search {
+        padding: 0 16px;
+        font-size: 18px;
+        height: 35px;
+        line-height: 35px;
+        background-color: #f10215;
+        color: #fff;
+      }
+    }
+    .recommend {
+      margin-top: 10px;
+      li {
+        float: left;
+        margin-right: 10px;
+        white-space: nowrap;
+        line-height: 1;
+        color: #999;
+        &.color-red {
+          color: #f10316;
+        }
+        &:hover {
+          color: #f10316;
+        }
+      }
+    }
+  }
+  .logo {
+    position: absolute;
+    top: -31px;
+    left: 0;
+    a {
+      display: block;
+      width: 190px;
+      height: 170px;
+      background: #fff url(../imgs/logo.v2@2x.png) no-repeat;
+      background-size: contain;
+    }
+  }
+  .cart {
+    position: absolute;
+    top: 25px;
+    padding-left: 50px;
+    padding-right: 50px;
+    right: 100px;
+    height: 33px;
+    line-height: 33px;
+    background-color: #ffffff;
+    border: 1px solid #e3e4e5;
+    color: #f10315;
+    .title {
+      padding: 0 5px;
+    }
+    .icon-cart {
+      font-weight: 700;
+    }
+    .count {
+      position: absolute;
+      top: 5px;
+      right: 36px;
+      background-color: #f10215;
+      color: #fff;
+      border-radius: 50%;
+      width: 14px;
+      height: 14px;
+      line-height: 14px;
+      text-align: center;
+    }
+  }
+  .classify {
+    position: absolute;
+    left: 200px;
+    bottom: 12px;
+    li {
+      float: left;
+      font-size: 16px;
+      font-weight: 700;
+      color: #795555;
+      a {
+        margin-left: 30px;
+      }
+    }
+    .line {
+      padding: 0 20px;
+      +li {
+        a {
+        margin-left: 0;
+          
+        }
+      }
+    }
+  }
+}

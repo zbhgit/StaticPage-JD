@@ -5,7 +5,7 @@
   .address {
     height: 30px;
     line-height: 30px;
-    margin-left: 200px;
+    margin-left: 210px;
     .icon-address {
       vertical-align: middle;
       color: red;
@@ -39,9 +39,10 @@
         position: relative;
         padding-left: 7px;
         img {
-          width: 67px;
-          height: 67px;
-          border:1px solid #cfcfcf;
+          padding: 4px;
+          width: 59px;
+          height: 59px;
+          border: 1px solid #cfcfcf;
         }
         &:after {
           position: absolute;
@@ -52,8 +53,8 @@
           width: 0px;
           height: 0px;
           border-top: none;
-          border-right:10px solid transparent;
-          border-bottom: 10px solid #f6f6f6; 
+          border-right: 10px solid transparent;
+          border-bottom: 10px solid #f6f6f6;
           border-left: 10px solid transparent;
         }
       }
