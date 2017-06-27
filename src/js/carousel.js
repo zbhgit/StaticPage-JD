@@ -54,7 +54,6 @@ function showPoint() {
 // 自动播放
 timerId = setInterval(function () {
   currentImgIndex = increaseIndex()
-  console.log(currentImgIndex)
   change(currentImgIndex)
 }, 3000)
 

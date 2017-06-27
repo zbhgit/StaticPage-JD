@@ -84,8 +84,87 @@
           left: 0;
           bottom: 0;
           width: 28px;
-          height:2px;
-          background-color:#db192b; 
+          height: 2px;
+          background-color: #db192b;
+        }
+      }
+      .bulletin-content {
+        padding-top: 12px;
+        padding-bottom: 20px;
+        ul {
+          display: none;
+          li {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+          }
+        }
+        li a {
+          line-height: 24px;
+        }
+      }
+    }
+    .tools {
+      position: relative;
+      width: 190px;
+      overflow: hidden;
+      .tool-panel {
+        width: 191px;
+        ul {
+          margin-left: -1px;
+          li.tool-show {
+            transition: all 0.2s linear;
+            height: 24px;
+            line-height: 24px;
+            .iconfont {
+              transition: all 0.1s linear;
+              padding-top: 0;
+              height: 0;
+              color: transparent;
+            }
+            span {
+              border-top: 3px solid transparent;
+              
+            }
+            span.active {
+              transition: all 0.2s linear;
+              border-top-color: #e01121;              
+              color: #e01121;
+            }
+          }
+          li.tool-hide {
+            border: none;
+            height: 0;
+          }
+        }
+        li {
+          float: left;
+          width: 47px;
+          height: 69px;
+          text-align: center;
+          border-top: 1px solid #e7e7e7;
+          border-right: 1px solid #e7e7e7;
+          transition: all 0.2s linear;
+          .iconfont {
+            padding-top: 15px;
+          }
+          i,
+          span {
+            display: block;
+            width: 47px;
+          }
+        }
+      }
+      .form {
+        position: absolute;
+        top: 27px;
+        left: 0;
+        z-index: 100;
+        .iconfont {
+          position: absolute;
+          top: 3px;
+          right: 3px;
+          color: red;
         }
       }
     }

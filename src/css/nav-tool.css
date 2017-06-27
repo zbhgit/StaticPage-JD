@@ -70,3 +70,68 @@
         width: 28px;
         height: 2px;
         background-color: #db192b; }
+    .navigation .side-tool .bulletin .bulletin-content {
+      padding-top: 12px;
+      padding-bottom: 20px; }
+      .navigation .side-tool .bulletin .bulletin-content ul {
+        display: none; }
+        .navigation .side-tool .bulletin .bulletin-content ul li {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis; }
+      .navigation .side-tool .bulletin .bulletin-content li a {
+        line-height: 24px; }
+  .navigation .side-tool .tools {
+    position: relative;
+    width: 190px;
+    overflow: hidden; }
+    .navigation .side-tool .tools .tool-panel {
+      width: 191px; }
+      .navigation .side-tool .tools .tool-panel ul {
+        margin-left: -1px; }
+        .navigation .side-tool .tools .tool-panel ul li.tool-show {
+          -webkit-transition: all 0.2s linear;
+          transition: all 0.2s linear;
+          height: 24px;
+          line-height: 24px; }
+          .navigation .side-tool .tools .tool-panel ul li.tool-show .iconfont {
+            -webkit-transition: all 0.1s linear;
+            transition: all 0.1s linear;
+            padding-top: 0;
+            height: 0;
+            color: transparent; }
+          .navigation .side-tool .tools .tool-panel ul li.tool-show span {
+            border-top: 3px solid transparent; }
+          .navigation .side-tool .tools .tool-panel ul li.tool-show span.active {
+            -webkit-transition: all 0.2s linear;
+            transition: all 0.2s linear;
+            border-top-color: #e01121;
+            color: #e01121; }
+        .navigation .side-tool .tools .tool-panel ul li.tool-hide {
+          border: none;
+          height: 0; }
+      .navigation .side-tool .tools .tool-panel li {
+        float: left;
+        width: 47px;
+        height: 69px;
+        text-align: center;
+        border-top: 1px solid #e7e7e7;
+        border-right: 1px solid #e7e7e7;
+        -webkit-transition: all 0.2s linear;
+        transition: all 0.2s linear; }
+        .navigation .side-tool .tools .tool-panel li .iconfont {
+          padding-top: 15px; }
+        .navigation .side-tool .tools .tool-panel li i,
+        .navigation .side-tool .tools .tool-panel li span {
+          display: block;
+          width: 47px; }
+    .navigation .side-tool .tools .form {
+      position: absolute;
+      top: 27px;
+      left: 0;
+      z-index: 100; }
+      .navigation .side-tool .tools .form .iconfont {
+        position: absolute;
+        top: 3px;
+        right: 3px;
+        color: red; }
