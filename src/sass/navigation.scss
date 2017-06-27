@@ -1,5 +1,6 @@
 .navigation {
   margin-top: 1px;
+  margin-bottom: 10px;
   .side-nav {
     float: left;
     position: relative;
@@ -14,7 +15,7 @@
         font-size: 0;
         height: 28px;
         line-height: 28px;
-        &:hover {
+        &.active {
           background-color: #999395;
         }
         a {
@@ -30,29 +31,21 @@
       }
     }
     .detail-wrapper {
-      display: block;
+      display: none;
       position: absolute;
       top: 0;
       left: 190px;
       background-color: #fff;
       width: 1190px - 190;
-      height: 480px;
       min-height: 480px;
       box-shadow: 0 0 2px rgba(0, 0, 0, .3);
     }
   }
-  .caousel {
+  .main-ad {
     float: left;
     margin: 0 10px;
     width: 1190px-400px;
     height: 480px;
-    background-color: #333;
-  }
-  .side-tool {
-    float: left;
-    width: 190px;
-    height: 480px;
-    background-color: #666;
   }
 }
 
@@ -137,9 +130,11 @@
 
 // nav-detail 布局
 .nav-detail {
-  display: block;
+  display: none;
   position: absolute;
   top: 0;
+  left: 0;
+  z-index: 100;
   padding: 20px 16px 10px 20px;
   background-color: #fff;
   width: 1190px - 190 - 36;

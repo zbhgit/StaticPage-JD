@@ -10,34 +10,34 @@
       vertical-align: middle;
       color: red;
       margin-top: -2px; }
-  .top-nav .nav-item {
+  .top-nav .top-nav-item {
     height: 30px;
     line-height: 30px; }
-    .top-nav .nav-item li {
+    .top-nav .top-nav-item li {
       float: left; }
-      .top-nav .nav-item li a {
+      .top-nav .top-nav-item li a {
         padding: 0 14px;
         line-height: 1;
         border-right: 1px solid #ccc; }
-        .top-nav .nav-item li a:hover {
+        .top-nav .top-nav-item li a:hover {
           color: #f10215; }
-      .top-nav .nav-item li:last-child a {
+      .top-nav .top-nav-item li:last-child a {
         border-right: none; }
-      .top-nav .nav-item li .icon-down {
+      .top-nav .top-nav-item li .icon-down {
         position: relative;
         top: -2px;
         font-size: 12px;
         vertical-align: middle;
         padding-left: 5px; }
-      .top-nav .nav-item li .mobileApp {
+      .top-nav .top-nav-item li .mobileApp {
         position: relative;
         padding-left: 7px; }
-        .top-nav .nav-item li .mobileApp img {
+        .top-nav .top-nav-item li .mobileApp img {
           padding: 4px;
           width: 59px;
           height: 59px;
           border: 1px solid #cfcfcf; }
-        .top-nav .nav-item li .mobileApp:after {
+        .top-nav .top-nav-item li .mobileApp:after {
           position: absolute;
           top: -8px;
           left: 31px;
@@ -49,5 +49,5 @@
           border-right: 10px solid transparent;
           border-bottom: 10px solid #f6f6f6;
           border-left: 10px solid transparent; }
-    .top-nav .nav-item .register {
+    .top-nav .top-nav-item .register {
       color: #f10215; }
