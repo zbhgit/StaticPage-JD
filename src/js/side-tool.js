@@ -44,6 +44,9 @@ $toolPanel.find('li').on('mouseenter', function () {
   if ($(this).index() < 4) {
     $toolShow.addClass('tool-show')
     $toolHide.addClass('tool-hide')
+     $toolHide.css({
+       'display': 'none'
+     })
   }
 })
 

@@ -84,6 +84,7 @@
   .navigation .side-tool .tools {
     position: relative;
     width: 190px;
+    height: 210px;
     overflow: hidden; }
     .navigation .side-tool .tools .tool-panel {
       width: 191px; }
@@ -129,9 +130,65 @@
       position: absolute;
       top: 27px;
       left: 0;
-      z-index: 100; }
-      .navigation .side-tool .tools .form .iconfont {
+      padding: 0 8px;
+      width: 174px;
+      height: 186px; }
+      .navigation .side-tool .tools .form .icon-close {
         position: absolute;
-        top: 3px;
+        top: 0;
         right: 3px;
+        line-height: 20px;
+        font-size: 20px;
         color: red; }
+      .navigation .side-tool .tools .form .tab-rapper {
+        margin-top: 20px; }
+        .navigation .side-tool .tools .form .tab-rapper .tab-title a {
+          float: left;
+          margin-right: 10px;
+          padding-bottom: 2px;
+          line-height: 14px; }
+          .navigation .side-tool .tools .form .tab-rapper .tab-title a:last-child {
+            padding-right: 0; }
+        .navigation .side-tool .tools .form .tab-rapper .tab-content {
+          margin-top: 12px; }
+          .navigation .side-tool .tools .form .tab-rapper .tab-content .input-wrapper {
+            margin-bottom: 10px; }
+            .navigation .side-tool .tools .form .tab-rapper .tab-content .input-wrapper label {
+              line-height: 22px;
+              color: #666666;
+              padding-right: 3px; }
+            .navigation .side-tool .tools .form .tab-rapper .tab-content .input-wrapper input,
+            .navigation .side-tool .tools .form .tab-rapper .tab-content .input-wrapper select {
+              height: 20px;
+              font-size: 12px;
+              padding: 0 4px;
+              color: #999999;
+              border: 1px solid #e7e7e7; }
+            .navigation .side-tool .tools .form .tab-rapper .tab-content .input-wrapper input {
+              width: 83px; }
+            .navigation .side-tool .tools .form .tab-rapper .tab-content .input-wrapper select {
+              width: 63px;
+              border: 1px solid #ccc option;
+                border-border: none; }
+            .navigation .side-tool .tools .form .tab-rapper .tab-content .input-wrapper span {
+              color: red; }
+          .navigation .side-tool .tools .form .tab-rapper .tab-content .fast {
+            display: block;
+            padding: 7px 0;
+            width: 85px;
+            text-align: center;
+            color: #fff;
+            background-color: #e01222; }
+          .navigation .side-tool .tools .form .tab-rapper .tab-content .hot {
+            display: block;
+            position: relative;
+            padding-top: 14px;
+            padding-left: 35px;
+            line-height: 14px;
+            color: #527cdb; }
+            .navigation .side-tool .tools .form .tab-rapper .tab-content .hot .icon-hot {
+              position: absolute;
+              top: 16px;
+              left: 0;
+              font-size: 30px;
+              margin-right: 6px; }

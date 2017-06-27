@@ -107,6 +107,7 @@
     .tools {
       position: relative;
       width: 190px;
+      height: 210px;
       overflow: hidden;
       .tool-panel {
         width: 191px;
@@ -124,11 +125,10 @@
             }
             span {
               border-top: 3px solid transparent;
-              
             }
             span.active {
               transition: all 0.2s linear;
-              border-top-color: #e01121;              
+              border-top-color: #e01121;
               color: #e01121;
             }
           }
@@ -159,12 +159,84 @@
         position: absolute;
         top: 27px;
         left: 0;
-        z-index: 100;
-        .iconfont {
+        padding: 0 8px;
+        width: 174px;
+        height: 186px;
+        .icon-close {
           position: absolute;
-          top: 3px;
+          top: 0;
           right: 3px;
+          line-height: 20px;
+          font-size: 20px;
           color: red;
+        }
+        .tab-rapper {
+          margin-top: 20px;
+          .tab-title {
+            a {
+              float: left;
+              margin-right: 10px;
+              padding-bottom:2px;
+              line-height: 14px;
+              &:last-child {
+                padding-right: 0;
+              }
+            }
+          }
+          .tab-content {
+            margin-top: 12px;
+            .input-wrapper {
+              margin-bottom: 10px;
+              label {
+                line-height: 22px;
+                color: #666666;
+                padding-right: 3px;
+              }
+              input,
+              select {
+                height: 20px;
+                font-size: 12px;
+                padding: 0 4px;
+                color: #999999;
+                border: 1px solid #e7e7e7;
+              }
+              input {
+                width: 83px;
+              }
+              select {
+                width: 63px;
+                border: 1px solid #ccc option {
+                  border: none;
+                }
+              }
+              span {
+                color:red;
+              }
+            }
+            .fast {
+              display: block;
+              padding: 7px 0;
+              width: 85px;
+              text-align: center;
+              color: #fff;
+              background-color: #e01222;
+            }
+            .hot {
+              display: block;
+              position: relative;
+              padding-top:14px;
+              padding-left: 35px;
+              line-height: 14px;
+              color:#527cdb; 
+              .icon-hot {
+                position: absolute;
+                top: 16px;
+                left: 0;
+                font-size: 30px;
+                margin-right:6px;
+              }
+            }
+          }
         }
       }
     }

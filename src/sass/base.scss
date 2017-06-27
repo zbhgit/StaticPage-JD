@@ -2,7 +2,6 @@ body {
   font: 12px/1.5 Microsoft YaHei, tahoma, arial, Hiragino Sans GB, \\5b8b\4f53, sans-serif;
   color: #666;
   margin: 0;
-
   background-color: #f6f6f6;
 }
 
@@ -33,9 +32,11 @@ body {
     visibility: hidden;
   }
 }
+
 ul {
   padding: 0;
 }
+
 li {
   list-style: none;
 }
@@ -43,4 +44,36 @@ li {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+input,
+select,
+option {
+  outline: none;
+}
+
+select {
+  background-color: #fff;
+  margin:0;
+  padding: 0;
+}
+
+
+
+.enter-active {
+  position: relative;
+  background-color: #e01222;
+  color: #fff;
+}
+.enter-active:after {
+  content: "";
+  position: absolute;
+  left: 43%;
+  bottom: -4px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid #e01222;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
 }

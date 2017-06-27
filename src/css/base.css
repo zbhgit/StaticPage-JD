@@ -35,3 +35,30 @@ li {
 a {
   text-decoration: none;
   color: inherit; }
+
+input,
+select,
+option {
+  outline: none; }
+
+select {
+  background-color: #fff;
+  margin: 0;
+  padding: 0; }
+
+.enter-active {
+  position: relative;
+  background-color: #e01222;
+  color: #fff; }
+
+.enter-active:after {
+  content: "";
+  position: absolute;
+  left: 43%;
+  bottom: -4px;
+  display: block;
+  width: 0;
+  height: 0;
+  border-top: 4px solid #e01222;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent; }
