@@ -62,3 +62,21 @@ select {
   border-top: 4px solid #e01222;
   border-right: 4px solid transparent;
   border-left: 4px solid transparent; }
+
+.title-background {
+  position: relative;
+  height: 54px;
+  background: url(../imgs/seckill_hd.png) no-repeat;
+  color: #fff; }
+
+.title-background:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url(../imgs/sprite_index@2x.png);
+  background-position: -118px -80px;
+  background-size: 166px 150px;
+  background-repeat: no-repeat;
+  width: 28px;
+  height: 28px; }

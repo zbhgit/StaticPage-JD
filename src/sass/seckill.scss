@@ -1,0 +1,54 @@
+.seckill {
+  .seckill-title {
+    height: 40px;
+    line-height: 40px;
+    padding: 7px 0;
+    .tilte-bg {
+      margin-left: 30px;
+      width: 34px;
+      height: 40px;
+      background-image: url(../imgs/sprite_index@2x.png);
+      background-repeat: no-repeat;
+      background-position: 0px -24px;
+      background-size: 166px 150px;
+    }
+    .title {
+      margin-left: 3px;
+      font-size: 22px;
+      a {
+        font-size: 12px;
+        padding-left: 12px;
+      }
+    }
+  }
+  .seckill-time {
+    padding-right: 20px;
+    line-height: 1;
+    p {
+      padding-top: 20px;
+    }
+    div {
+      margin: 0 8px;
+      padding-top: 2px;
+      span {
+        float: left;
+        text-align: center;
+        font-size: 20px;
+        
+        line-height: 36px;
+        width: 36px;
+        height: 36px;
+        border-radius: 4px;
+        color: #f90013;
+        background-color: #440106;
+      }
+      .colon {
+        font-weight: 700;
+        width: 12px;
+        border-radius: 0;        
+        background-color: transparent;
+        color: #440106;
+      }
+    }
+  }
+}
