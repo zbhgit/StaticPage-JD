@@ -41,3 +41,71 @@
       border-radius: 0;
       background-color: transparent;
       color: #440106; }
+
+.seckill .seckill-content {
+  background-color: #fff;
+  padding: 12px 0; }
+  .seckill .seckill-content .seckill-item-wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 1000px; }
+    .seckill .seckill-content .seckill-item-wrapper:hover .seckill-prev,
+    .seckill .seckill-content .seckill-item-wrapper:hover .seckill-next {
+      display: block; }
+    .seckill .seckill-content .seckill-item-wrapper ul li {
+      float: left;
+      width: 170px;
+      padding: 0 14px 0 15px;
+      border-right: 1px solid #e7e7e7; }
+      .seckill .seckill-content .seckill-item-wrapper ul li .seckill-item {
+        text-align: center; }
+        .seckill .seckill-content .seckill-item-wrapper ul li .seckill-item a {
+          display: block; }
+          .seckill .seckill-content .seckill-item-wrapper ul li .seckill-item a img {
+            width: 130px;
+            height: 130px;
+            margin: 15px 0 10px 0;
+            -webkit-transition: -webkit-transform .2s linear;
+            transition: -webkit-transform .2s linear;
+            transition: transform .2s linear;
+            transition: transform .2s linear, -webkit-transform .2s linear; }
+            .seckill .seckill-content .seckill-item-wrapper ul li .seckill-item a img:hover {
+              -webkit-transform: translateY(-10px);
+              transform: translateY(-10px); }
+          .seckill .seckill-content .seckill-item-wrapper ul li .seckill-item a p {
+            overflow: hidden;
+            text-align: left;
+            height: 32px;
+            line-height: 16px; }
+      .seckill .seckill-content .seckill-item-wrapper ul li .figure {
+        margin: 4px 0 2px 0;
+        font-size: 18px;
+        color: #f10214; }
+        .seckill .seckill-content .seckill-item-wrapper ul li .figure span {
+          font-size: 12px;
+          text-decoration: line-through; }
+        .seckill .seckill-content .seckill-item-wrapper ul li .figure span:first-child {
+          text-decoration: none;
+          color: #f10214; }
+    .seckill .seckill-content .seckill-item-wrapper .seckill-prev,
+    .seckill .seckill-content .seckill-item-wrapper .seckill-next {
+      display: none;
+      position: absolute;
+      top: 50%;
+      margin-top: -20px;
+      text-align: center;
+      width: 16px;
+      height: 30px;
+      line-height: 30px;
+      background-color: rgba(0, 0, 0, 0.2); }
+    .seckill .seckill-content .seckill-item-wrapper .seckill-next {
+      right: 9px; }
+    .seckill .seckill-content .seckill-item-wrapper .seckill-prev {
+      left: 9px; }
+  .seckill .seckill-content .side-img {
+    float: left;
+    width: 180px;
+    height: 225px; }
+    .seckill .seckill-content .side-img img {
+      width: 180px;
+      height: 225px; }
