@@ -37,21 +37,94 @@ $bulletinBtn.find('span').on('mouseenter', function () {
 var $toolPanel = $('.tool-panel')
 var $toolShow = $('.tool-show_js')
 var $toolHide = $('.tool-hide_js')
+var $form = $('.form')
+var $tabWrapper = $('.tab-wrapper')
+var $close = $('.form .icon-close')
+
+var $btn = $('.tab-title a')
+var $btnParent = $btn.parent()
+var $contentWrapper = $('.tab-content').parent('.content-wrapper')
+
 var toolShowNum;
 
-$toolPanel.find('li').on('mouseenter', function () {
-  
-  if ($(this).index() < 4) {
-    $toolShow.addClass('tool-show')
-    $toolHide.addClass('tool-hide')
-     $toolHide.css({
-       'display': 'none'
-     })
-  }
+
+// 添加class 
+
+panelHide()
+$($toolShow.get(3)).on('mouseleave', function () {
+  panelHide()
+})
+
+function panelHide() {
+  $toolPanel.find('li').on('mouseenter', function () {
+
+    if ($(this).index() < 4) {
+      $toolShow.addClass('tool-show')
+      $toolHide.addClass('tool-hide')
+      $toolHide.css({
+        'display': 'none'
+      })
+      $form.css({
+        'top': '27px'
+      })
+    }
+  })
+  $toolShow.on('mouseenter', function () {
+    var showNum = $(this).index()
+    $toolShow.find('span').removeClass('active')
+    $(this).find('span').addClass('active')
+    $tabWrapper.css({
+      'display': 'none'
+    })
+    $($tabWrapper.get(showNum)).css({
+      'display': 'block'
+    })
+
+    // 初始化状态
+    $($tabWrapper.get(showNum)).find('.tab-title a').each(function (index) {
+      if (index === 0) {
+        $(this).addClass('enter-active')
+      } else {
+        $(this).removeClass('enter-active')
+      }
+    })
+    $contentWrapper.css({
+      'left': 0
+    })
+
+  })
+}
+
+
+// 显示tool-panel
+
+$close.on('click', function () {
+  $toolShow.removeClass('tool-show')
+  $toolHide.removeClass('tool-hide')
+  $toolHide.css({
+    'display': 'block'
+  })
+  $form.css({
+    'top': '220px'
+  })
+  $($toolShow.get(3)).off('mouseenter')
 })
 
 
-$toolShow.on('mouseenter',function(){
-  $toolShow.find('span').removeClass('active')
-  $(this).find('span').addClass('active')
+
+
+// 动画tab切换 
+
+
+
+
+
+$btnParent.find('a').on('mouseenter', function () {
+  $btnParent.find('a').removeClass('enter-active')
+  $(this).addClass('enter-active')
+  var num = $(this).index()
+  var toggleLeft = -182 * num + 'px'
+  $contentWrapper.animate({
+    'left': toggleLeft
+  }, 200)
 })
