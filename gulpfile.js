@@ -55,8 +55,8 @@ gulp.task('src:css', function () {
 gulp.task('dist:js', function () {
   gulp.src('dist/js/*').pipe(clean())
   return gulp.src('src/js/*.js')
-    .pipe(uglify())
     .pipe(concat('merge.js'))
+    .pipe(uglify())    
     .pipe(gulp.dest('dist/js/'))
 })
 
