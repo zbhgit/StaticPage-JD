@@ -12,6 +12,7 @@ var concat = require('gulp-concat')
 var sass = require('gulp-sass')
 var autoPrefixer = require('gulp-autoprefixer')
 var connect = require('gulp-connect')
+var pump = require('pump')
 
 //压缩处理图片 
 
