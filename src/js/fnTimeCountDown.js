@@ -1,5 +1,4 @@
 var fnTimeCountDown = function (d, o) {
-  console.log(2)
   var f = {
     zero: function (n) {
       var n = parseInt(n, 10)
@@ -38,7 +37,6 @@ var fnTimeCountDown = function (d, o) {
       return pms
     },
     ui: function(){
-      console.log(1)
       if(o.sec) {
         o.sec.innerHTML = f.dv().sec
       }

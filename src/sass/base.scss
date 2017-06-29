@@ -93,6 +93,77 @@ select {
   background-position: -118px -80px;
   background-size: 166px 150px;
   background-repeat: no-repeat;
-  width:28px;
+  width: 28px;
   height: 28px;
 }
+
+// 通用标题样式1
+.general-head {
+  position: relative;
+  z-index: 1;
+  width: 390px;
+  height: 55px;
+  line-height: 55px;
+  background-color: #2e828b;
+  color: #ffffff;
+  &.purple {
+    background-color: #672f74;
+  }
+  &.orange {
+    background-color: #e45d04;
+  }
+  
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    visibility: hidden;
+  }
+  .title {
+    float: left;
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  .more {
+    margin-right: 20px;
+    float: right;
+    vertical-align: middle;
+    .icon-right1 {
+      position: relative;
+      top: 2px;
+      margin-left: 5px;
+    }
+  }
+  .triangle-transparent,
+  .triangle-color {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+  }
+  .triangle-transparent {
+    top: 0;
+    left: 0;
+    z-index: 10;
+    border-top: 10px solid #fff;
+    border-left: 10px solid #fff;
+  }
+  .triangle-color {
+    top: 3px;
+    left: 3px;
+    z-index: 11;
+    border-top: 8px solid #328089;
+    border-left: 8px solid #328089;
+    &.triangle-purple {
+      border-top: 8px solid #76488e;
+      border-left: 8px solid #76488e;
+    }
+    &.triangle-orange {
+      border-top: 8px solid #c9540d;
+      border-left: 8px solid #c9540d;
+    }
+  }
+}
+
+.color {}

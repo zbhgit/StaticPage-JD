@@ -1,0 +1,195 @@
+.life {
+  margin-top: 30px; }
+  .life .life-good {
+    float: left;
+    width: 390px;
+    margin-right: 10px;
+    background-color: #fff; }
+    .life .life-good .good-list {
+      padding: 10px 10px 17px;
+      margin-left: -1px;
+      width: 370px;
+      overflow: hidden; }
+      .life .life-good .good-list li {
+        float: left;
+        width: 184px;
+        height: 120px;
+        overflow: hidden;
+        border-bottom: 1px solid #e7e7e7;
+        border-right: 1px solid #e7e7e7; }
+        .life .life-good .good-list li:nth-child(2n) {
+          border-right: none; }
+        .life .life-good .good-list li:nth-child(5), .life .life-good .good-list li:nth-child(6) {
+          border-bottom: none; }
+        .life .life-good .good-list li a {
+          position: relative;
+          display: block;
+          width: 185px;
+          height: 120px; }
+          .life .life-good .good-list li a span {
+            position: absolute;
+            left: 20px;
+            top: 17px;
+            width: 70px; }
+          .life .life-good .good-list li a img {
+            position: absolute;
+            right: 10px;
+            bottom: 6px;
+            width: 80px;
+            height: 80px;
+            vertical-align: top;
+            -webkit-transition: -webkit-transform 0.6s;
+            transition: -webkit-transform 0.6s;
+            transition: transform 0.6s;
+            transition: transform 0.6s, -webkit-transform 0.6s; }
+            .life .life-good .good-list li a img:hover {
+              -webkit-transform: translateX(-8px);
+              transform: translateX(-8px); }
+  .life .life-special {
+    float: left;
+    margin-right: 10px;
+    width: 390px;
+    background-color: #fff; }
+    .life .life-special:hover .special-wrapper .prev,
+    .life .life-special:hover .special-wrapper .next {
+      display: block; }
+    .life .life-special .special-wrapper {
+      position: relative;
+      text-align: center;
+      height: 390px; }
+      .life .life-special .special-wrapper .prev,
+      .life .life-special .special-wrapper .next {
+        display: none;
+        position: absolute;
+        top: 44%;
+        margin-top: -11px;
+        width: 15px;
+        height: 40px;
+        line-height: 40px;
+        background-color: #f6f6f6;
+        text-align: center;
+        font-size: 12px; }
+      .life .life-special .special-wrapper .prev {
+        left: 0; }
+      .life .life-special .special-wrapper .next {
+        right: 0; }
+      .life .life-special .special-wrapper .point-wrapper {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        margin-left: -36px;
+        display: inline-block;
+        margin-top: 13px;
+        padding-bottom: 15px; }
+        .life .life-special .special-wrapper .point-wrapper span {
+          float: left;
+          width: 8px;
+          height: 8px;
+          margin: 0 7px;
+          border-radius: 50%;
+          background-color: #c8c8c8; }
+          .life .life-special .special-wrapper .point-wrapper span.active {
+            background-color: #e01222; }
+    .life .life-special .special-list {
+      display: none;
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 0 20px; }
+      .life .life-special .special-list .up,
+      .life .life-special .special-list .down {
+        border-bottom: 1px solid #eee;
+        margin-top: 26px;
+        padding-bottom: 5px; }
+        .life .life-special .special-list .up p,
+        .life .life-special .special-list .down p {
+          margin-bottom: 16px;
+          text-align: left; }
+        .life .life-special .special-list .up img,
+        .life .life-special .special-list .down img {
+          width: 110px;
+          line-height: 110px;
+          margin: 0 2px; }
+      .life .life-special .special-list .down {
+        margin-top: 16px;
+        border: none; }
+  .life .life-ranking {
+    float: left;
+    width: 390px;
+    height: 445px;
+    background-color: #fff; }
+    .life .life-ranking .tab-button-wrapper {
+      position: relative; }
+      .life .life-ranking .tab-button-wrapper .tab-line {
+        position: absolute;
+        top: 32px;
+        left: 12px;
+        width: 58px;
+        height: 2px;
+        background-color: #f10214; }
+      .life .life-ranking .tab-button-wrapper .tab-button {
+        margin: 0 12px;
+        padding-bottom: 7px;
+        border-bottom: 1px solid #e7e7e7; }
+        .life .life-ranking .tab-button-wrapper .tab-button:after {
+          content: "";
+          display: block;
+          clear: both; }
+        .life .life-ranking .tab-button-wrapper .tab-button li {
+          float: left;
+          margin-top: 6px;
+          padding: 0 12px;
+          font-size: 14px;
+          border-right: 1px solid #d2d1d1; }
+          .life .life-ranking .tab-button-wrapper .tab-button li:first-child {
+            padding-left: 0; }
+          .life .life-ranking .tab-button-wrapper .tab-button li:last-child {
+            border: none;
+            padding-right: 0; }
+          .life .life-ranking .tab-button-wrapper .tab-button li:hover {
+            color: red; }
+    .life .life-ranking .tab-content {
+      position: relative;
+      padding: 10px 11px 10px 10px; }
+      .life .life-ranking .tab-content .tab-list {
+        display: none;
+        position: absolute;
+        top: 13px;
+        left: 10px; }
+      .life .life-ranking .tab-content li {
+        float: left;
+        position: relative;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 123px;
+        padding: 13px 10px;
+        border-right: 1px solid #e7e7e7;
+        border-bottom: 1px solid #e7e7e7; }
+        .life .life-ranking .tab-content li:nth-child(3n) {
+          border-right: none; }
+        .life .life-ranking .tab-content li:nth-child(4), .life .life-ranking .tab-content li:nth-child(5), .life .life-ranking .tab-content li:nth-child(6) {
+          border-bottom: none; }
+        .life .life-ranking .tab-content li img {
+          width: 100px; }
+        .life .life-ranking .tab-content li span {
+          display: block; }
+        .life .life-ranking .tab-content li .rank-num {
+          position: absolute;
+          top: 13px;
+          left: 13px;
+          width: 30px;
+          height: 40px;
+          font-size: 24px;
+          font-weight: 700;
+          text-align: center;
+          margin-top: 1px;
+          color: #fff;
+          background-image: url("../imgs/sprite_index@2x.png");
+          background-size: 170px 158px;
+          background-position: -40px -80px; }
+          .life .life-ranking .tab-content li .rank-num.num1 {
+            background-position: -84px -30px; }
+          .life .life-ranking .tab-content li .rank-num.num2 {
+            background-position: -84px -30px; }
+          .life .life-ranking .tab-content li .rank-num.num3 {
+            background-position: -84px -30px; }

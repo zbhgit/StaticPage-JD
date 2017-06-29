@@ -1,10 +1,10 @@
 var $carousel = $('.carousel')
 
-var $prev = $('.prev')
+var $prev = $('.carousel-wrapper .prev')
 
-var $next = $('.next')
+var $next = $('.carousel-wrapper .next')
 
-var $point = $('.ponit')
+var $point = $('.carousel-wrapper .ponit')
 
 var len = $carousel.find('img').length;
 
