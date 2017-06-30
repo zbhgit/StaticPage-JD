@@ -1,0 +1,125 @@
+.general-content {
+  background-color: #fff;
+  width: 570px;
+  padding: 10px;
+  .c_1 {
+    width: 100%;
+    margin-bottom: 10px;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    .large-img {
+      float: left;
+      width: 183px;
+      height: 260px;
+      overflow: hidden;
+      &:hover {
+        img {
+          transform: translateX(-10px)
+        }
+      }
+      img {
+        height: 260px;
+        width: 193px;
+        transition: transform 0.2s;
+      }
+    }
+    ul {
+      float: left;
+      margin-left: 10px;
+      width: 377px;
+      li {
+        position: relative;
+        float: left;
+        width: 164px;
+        height: 130px;
+        padding-left: 24px;
+        border-right: 1px solid #e6e6e6;
+        border-bottom: 1px solid #e6e6e6;
+        &.border-right-none {
+          border-right: none;
+        }
+        &.border-bottom-none {
+          border-bottom: none;
+        }
+        &:hover {
+          img {
+            transform: translateX(-10px)
+          }
+        }
+        img {
+          position: absolute;
+          top: 22px;
+          right: 10px;
+          width: 100px;
+          height: 100px;
+          transition: transform 0.2s;
+        }
+        p {
+          position: relative;
+          z-index: 100;
+          width: 100px;
+          margin-top: 30px;
+          font-size: 14px;
+          color: #e16c46;
+        }
+        span {
+          position: relative;
+          z-index: 100;
+          width: 50px;
+          ;
+        }
+      }
+    }
+  }
+  .c_2 {
+    margin-right: -10px;
+    margin-bottom: 10px;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    a {
+      float: left;
+      width: 183px;
+      height: 130px;
+      overflow: hidden;
+      margin-right: 10px;
+      img {
+        height: 130px;
+        transition: transform 0.2s;
+      }
+      &:hover {
+        img {
+          transform: translateX(-10px)
+        }
+      }
+    }
+  }
+  .c_3 {
+    padding-top: 10px;
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    li {
+      float: left;
+      padding: 0 12px;
+      height: 20px;
+      border-right: 1px solid #dedfe0;
+      &.border-right-none {
+         border-right:none;
+      }
+      img {
+        height: 35px;
+        width: 70px;
+        margin-top: -7px;
+      }
+    }
+    
+  }
+}

@@ -1,0 +1,31 @@
+.more-goods {
+  ul {
+    margin-right: -10px; 
+    li {
+      float: left;
+      width: 218px;
+      padding: 5px;
+      margin-right: 10px;
+      margin-bottom: 10px;
+      background-color: #fff;
+      border: 1px solid #fff;
+      &:hover {
+        border: 1px solid red;
+      }
+      img {
+        width: 220px;
+        height: 220px;
+        vertical-align: top;
+      }
+      p {
+        margin-top: 6px;
+        padding: 0 10px;
+        height: 36px;
+        overflow: hidden;
+        &:last-child {
+          color: #f10214;
+        }
+      }
+    }
+  }
+}

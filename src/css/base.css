@@ -195,7 +195,7 @@ select {
         line-height: 26px;
         margin: 0 5px;
         padding: 0 10px;
-        background-color: #86679c;
-        border: 1px solid #77b6c3; }
+        background-color: rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.5); }
         .button-header .btns li a:hover {
           border: 1px solid #fff; }
