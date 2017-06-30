@@ -1,0 +1,94 @@
+.footer-service {
+  margin-top: 15px;
+  background-color: #eaeaea; }
+  .footer-service ul {
+    height: 100px;
+    border-bottom: 1px solid #dedede; }
+    .footer-service ul:after {
+      content: "";
+      display: block;
+      clear: both; }
+    .footer-service ul li {
+      float: left;
+      margin-top: 29px;
+      width: 25%;
+      text-align: center;
+      font-size: 17px;
+      line-height: 42px;
+      color: #444444;
+      vertical-align: middle; }
+      .footer-service ul li .icon-bg {
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+        width: 46px;
+        height: 42px;
+        background-image: url("../imgs/ico_service@2x.png");
+        background-size: 36px 170px;
+        background-repeat: no-repeat; }
+      .footer-service ul li .icon-bg_1 {
+        background-position: 0 0; }
+      .footer-service ul li .icon-bg_2 {
+        background-position: 0 -43px; }
+      .footer-service ul li .icon-bg_3 {
+        background-position: 0 -86px; }
+      .footer-service ul li .icon-bg_4 {
+        background-position: 0 -129px; }
+
+.footer-help {
+  padding-top: 15px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #dedede; }
+  .footer-help .help-wrapper {
+    float: left;
+    width: 1000px; }
+    .footer-help .help-wrapper > li {
+      float: left;
+      width: 200px;
+      line-height: 20px; }
+      .footer-help .help-wrapper > li h5 {
+        font-size: 14px;
+        line-height: 34px; }
+  .footer-help .delivery {
+    float: right;
+    width: 190px;
+    background-image: url("../imgs/ico_footer.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    overflow: hidden; }
+    .footer-help .delivery h5 {
+      text-align: center;
+      font-size: 14px;
+      line-height: 34px; }
+    .footer-help .delivery a {
+      display: block;
+      text-align: right; }
+
+.footer-wrapper {
+  background-color: #eaeaea;
+  padding-bottom: 20px; }
+
+.footer-copyright {
+  margin-top: 20px;
+  font-size: 0;
+  text-align: center; }
+  .footer-copyright p {
+    color: #999999;
+    line-height: 22px; }
+  .footer-copyright p:first-child {
+    margin-bottom: 15px;
+    color: #666666; }
+  .footer-copyright a {
+    font-size: 12px; }
+  .footer-copyright span {
+    font-size: 12px;
+    padding: 0 10px; }
+  .footer-copyright > div a {
+    display: inline-block;
+    overflow: hidden;
+    margin: 0 3px;
+    width: 103px;
+    height: 32px;
+    background-image: url("../imgs/ico_footer.png");
+    background-position: 0 -150px;
+    background-repeat: no-repeat; }
