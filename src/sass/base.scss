@@ -112,7 +112,6 @@ select {
   &.orange {
     background-color: #e45d04;
   }
-  
   &:after {
     content: "";
     display: block;
@@ -166,4 +165,81 @@ select {
   }
 }
 
-.color {}
+// 通用头部2 
+.dotted-header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: 30px;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .dotted {
+    margin-top: 15px;
+    float: left;
+    width: 500px;
+    height: 3px;
+    border-top: 3px dotted #c1c1c1;
+  }
+  .header-title {
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    font-size: 24px;
+    width: 190px;
+    color: #333333;
+  }
+}
+
+// 通用头部3 
+.button-header {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background-color: #974676;
+  color: #fff;
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  .btn-title {
+    display: block;
+    margin-left: 25px;
+    font-size: 20px;
+    line-height: 60px;
+    .icon-qr {
+      position: relative;
+      font-size: 24px;
+      margin-left: 10px;
+      top: 2px;
+    }
+  }
+  .btns {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 15px 16px 0;
+    &:hover {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    li {
+      float: left;
+      height: 26px;
+      a {
+        display: block;
+        line-height: 26px;
+        margin: 0 5px;
+        padding: 0 10px;
+        background-color: #86679c;
+        border: 1px solid #77b6c3;
+        &:hover {
+          border: 1px solid #fff;
+        }
+      }
+    }
+  }
+}

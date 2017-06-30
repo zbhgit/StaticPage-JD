@@ -1,0 +1,66 @@
+.enjoy .enjoy-content ul.enjoy-item {
+  width: 800px;
+  float: left; }
+  .enjoy .enjoy-content ul.enjoy-item li {
+    position: relative;
+    float: left;
+    width: 390px;
+    height: 170px;
+    margin-right: 10px;
+    overflow: hidden;
+    margin-bottom: 10px; }
+    .enjoy .enjoy-content ul.enjoy-item li:nth-child(5), .enjoy .enjoy-content ul.enjoy-item li:nth-child(6) {
+      margin-bottom: 0; }
+    .enjoy .enjoy-content ul.enjoy-item li a {
+      display: block;
+      padding-right: 10px;
+      width: 400px; }
+      .enjoy .enjoy-content ul.enjoy-item li a .item-text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 100;
+        width: 100px;
+        padding: 0 20px;
+        height: 170px;
+        color: #fff; }
+        .enjoy .enjoy-content ul.enjoy-item li a .item-text.bg-color1 {
+          background-color: #72bb90; }
+        .enjoy .enjoy-content ul.enjoy-item li a .item-text.bg-color2 {
+          background-color: #ddd279; }
+        .enjoy .enjoy-content ul.enjoy-item li a .item-text.bg-color3 {
+          background-color: #5c5566; }
+        .enjoy .enjoy-content ul.enjoy-item li a .item-text.bg-color4 {
+          background-color: #498c94; }
+        .enjoy .enjoy-content ul.enjoy-item li a .item-text.bg-color5 {
+          background-color: #d78e28; }
+        .enjoy .enjoy-content ul.enjoy-item li a .item-text.bg-color6 {
+          background-color: #876350; }
+        .enjoy .enjoy-content ul.enjoy-item li a .item-text h3 {
+          margin-top: 40px;
+          margin-bottom: 10px;
+          width: 100px;
+          font-size: 20px;
+          font-weight: 200;
+          line-height: 40px;
+          text-align: center;
+          border-top: 2px solid #fff;
+          border-bottom: 2px solid #fff; }
+        .enjoy .enjoy-content ul.enjoy-item li a .item-text p {
+          font-size: 14px; }
+      .enjoy .enjoy-content ul.enjoy-item li a img {
+        width: 400px;
+        height: 170px;
+        margin-right: -10px;
+        -webkit-transition: -webkit-transform 0.2s linear;
+        transition: -webkit-transform 0.2s linear;
+        transition: transform 0.2s linear;
+        transition: transform 0.2s linear, -webkit-transform 0.2s linear; }
+      .enjoy .enjoy-content ul.enjoy-item li a:hover > img {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px); }
+
+.enjoy .enjoy-content div.enjoy-item {
+  float: left;
+  width: 390px;
+  height: 530px; }

@@ -1,0 +1,141 @@
+.live-bar {
+  position: relative;
+  width: 390px;
+  height: 350px;
+  overflow: hidden;
+  margin-bottom: 10px;
+  
+  header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 390px;
+    line-height: 38px;
+    color: #fff;
+    span:first-child {
+      margin-left: 24px;
+      font-size: 16px;
+    }
+    span:last-child {
+      margin-right: 20px;
+      .icon-right1 {
+        position: relative;
+        top: 2px;
+        margin-left: 10px;
+      }
+    }
+  }
+  ul {
+    li {
+      width: 390px;
+      height: 350px;
+      img {
+        height: 350px;
+        margin-left: -40px;
+      }
+    }
+  }
+  .livetext {
+    position: absolute;
+    bottom: 40px;
+    width: 390px;
+    text-align: center;
+    color: #fff;
+  }
+  .liveprev,
+  .livenext {
+    position: absolute;
+    top: 50%;
+    margin-top: -20px;
+    width: 20px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3)
+  }
+  .liveprev {
+    left: 0;
+  }
+  .livenext {
+    right: 0;
+  }
+  .liveplay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -30px;
+    margin-top: -30px;
+    color: #fff;
+    font-size: 60px;
+    border-radius: 50%;
+  }
+  .livebtns {
+    position: absolute;
+    bottom: 24px;
+    width: 390px;
+    height: 8px;
+    text-align: center;
+    .btnswrap {
+      display: inline-block;
+      span {
+        float: left;
+        margin: 0 4px;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #fff;
+        &.active {
+          background-color: #fd3131;
+        }
+      }
+    }
+  }
+}
+
+.live-bottom {
+  width: 390px;
+  height: 170px;
+  .live-item {
+    position: relative;
+    float: left;
+    width: 190px;
+    margin-right: 10px;
+    overflow: hidden;
+    &:last-child {
+      margin-right: 0;
+    }
+    &:hover {
+      >img {
+        transform: translateX(-10px)
+      }
+    }
+    .item-dec{
+      position: absolute;
+      bottom: 5px;
+      z-index: 10;
+      width: 100px;
+      height: 80px;
+      padding: 0 45px;
+      color: #fff;
+      text-align: center;
+      background-color: #b0463e;
+      h3 {
+        margin-top: 10px; 
+        line-height: 30px;
+        border-top: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+      }
+      p {
+        margin-top: 10px;
+      }
+
+    }
+    img {
+      width: 200px;
+      height: 170px;
+      transition: transform 0.2s linear;
+    }
+  }
+}

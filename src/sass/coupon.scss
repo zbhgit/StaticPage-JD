@@ -1,0 +1,125 @@
+.coupon {
+  margin-top: 20px;
+  height: 215px;
+  background-color: #fff;
+  .couponn-side {
+    float: left;
+    width: 190px;
+    height: 215px;
+    background-color: #ea3524;
+    a {
+      display: block;
+      padding: 25px;
+      width: 140px;
+      height: 165px;
+      color: #fff;
+      h1 {
+        margin: 10px 0 15px;
+        padding: 0;
+        font-weight: 200;
+        font-size: 28px;
+        line-height: 1;
+      }
+      .coupon-line {
+        width: 55px;
+        height: 4px;
+        background-color: #fff;
+        margin-bottom: 20px;
+      }
+      p {
+        line-height: 18px;
+      }
+      .coupon-btn {
+        display: block;
+        margin-top: 20px;
+        width: 136px;
+        height: 26px;
+        line-height: 26px;
+        text-align: center;
+        border: 2px solid #fff;
+        .icon-right1 {
+          position: relative;
+          top: 2px;
+          margin-left: 20px;
+        }
+      }
+    }
+  }
+  .coupon-item {
+    float: left;
+    height: 215px;
+    li {
+      float: left;
+      margin: 10px 0px;
+      padding: 0 15px;
+      width: 169px;
+      height: 195px;
+      border-right: 1px solid #e7e7e7;
+      a {
+        position: relative;
+        display: block;
+        margin: 10px 0;
+        padding: 0 15px;
+        .item-content {
+          position: absolute;
+          top: 0;
+          left: 0;
+          z-index: 10;
+          width: 100px;
+          height: 177px;
+          border-top: 3px solid #e93524;
+          background-color: #fff;
+          p {
+            margin-top: 4px;
+            font-size: 24px;
+            color: #f10214;
+            font-weight: 700;
+            span {
+              font-size: 12px;
+            }
+          }
+          .coupon-limit {
+            margin-top: 4px;
+            display: block;
+            margin-left: 2px;
+            width: 84px;
+            color: #f10214;
+          }
+          .coupon-use {
+            margin-top: 4px;
+            padding: 12px 14px;
+            width: 72px;
+            height: 42px;
+            border-top: #ACD8F5 1px dotted;
+            background-color: #e7e7e7;
+            color: #676767;
+          }
+          .coupon-more {
+            display: block;
+            width: 100px;
+            text-align: center;
+            line-height: 26px;
+            background-color: #e93524;
+            color: #fff;
+          }
+        }
+        >img {
+          position: absolute;
+          top: 15px;
+          right: 0px;
+          width: 140px;
+          height: 140px;
+          transition: transform 0.2s linear;
+        }
+        &:hover {
+          >img {
+            transform: translateX(10px);
+          }
+        }
+      }
+      &:last-child {
+        border-right: none;
+      }
+    }
+  }
+}

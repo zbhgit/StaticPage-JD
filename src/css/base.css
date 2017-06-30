@@ -135,3 +135,67 @@ select {
     .general-head .triangle-color.triangle-orange {
       border-top: 8px solid #c9540d;
       border-left: 8px solid #c9540d; }
+
+.dotted-header {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  height: 30px; }
+  .dotted-header:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .dotted-header .dotted {
+    margin-top: 15px;
+    float: left;
+    width: 500px;
+    height: 3px;
+    border-top: 3px dotted #c1c1c1; }
+  .dotted-header .header-title {
+    float: left;
+    text-align: center;
+    line-height: 30px;
+    font-size: 24px;
+    width: 190px;
+    color: #333333; }
+
+.button-header {
+  position: relative;
+  height: 60px;
+  width: 100%;
+  background-color: #974676;
+  color: #fff; }
+  .button-header:after {
+    content: "";
+    display: block;
+    clear: both; }
+  .button-header .btn-title {
+    display: block;
+    margin-left: 25px;
+    font-size: 20px;
+    line-height: 60px; }
+    .button-header .btn-title .icon-qr {
+      position: relative;
+      font-size: 24px;
+      margin-left: 10px;
+      top: 2px; }
+  .button-header .btns {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 16px 15px 16px 0; }
+    .button-header .btns:hover {
+      content: "";
+      display: block;
+      clear: both; }
+    .button-header .btns li {
+      float: left;
+      height: 26px; }
+      .button-header .btns li a {
+        display: block;
+        line-height: 26px;
+        margin: 0 5px;
+        padding: 0 10px;
+        background-color: #86679c;
+        border: 1px solid #77b6c3; }
+        .button-header .btns li a:hover {
+          border: 1px solid #fff; }

@@ -1,0 +1,15 @@
+.banner {
+  margin-top: 20px;
+  background-color: #e0e0e0;
+  >div {
+    &:after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    >img {
+      float: left;
+      vertical-align: top;
+    }
+  } 
+}
