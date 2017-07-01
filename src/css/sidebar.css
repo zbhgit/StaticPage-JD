@@ -35,6 +35,7 @@
   position: fixed;
   top: 50%;
   right: 0px;
+  z-index: 888;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%); }
   .right-side li {
@@ -69,11 +70,12 @@
       -webkit-transition: all 0.3s linear;
       transition: all 0.3s linear; }
 
-.scorlltotop {
+.right-scorlltotop {
   position: fixed;
   bottom: 0;
-  right: 0px; }
-  .scorlltotop li {
+  right: 0px;
+  z-index: 888; }
+  .right-scorlltotop li {
     position: relative;
     margin-bottom: 1px;
     width: 35px;
@@ -84,14 +86,14 @@
     background-color: #7a6e6e;
     -webkit-transition: all 0.3s linear;
     transition: all 0.3s linear; }
-    .scorlltotop li:hover {
+    .right-scorlltotop li:hover {
       background-color: #c81623;
       border-radius: 0; }
-      .scorlltotop li:hover .text {
+      .right-scorlltotop li:hover .text {
         background-color: #c81623;
         right: 35px;
         opacity: 1; }
-    .scorlltotop li .text {
+    .right-scorlltotop li .text {
       position: absolute;
       right: -35px;
       opacity: 0;

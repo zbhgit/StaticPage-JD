@@ -42,6 +42,7 @@
   position: fixed;
   top: 50%;
   right: 0px;
+  z-index: 888;  
   transform: translateY(-50%);
   li {
     position: relative;
@@ -77,10 +78,12 @@
     }
   }
 }
-.scorlltotop {
+
+.right-scorlltotop {
   position: fixed;
   bottom: 0;
   right: 0px;
+  z-index: 888;
   li {
     position: relative;
     margin-bottom: 1px;

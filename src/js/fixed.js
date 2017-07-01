@@ -51,7 +51,7 @@ console.log($leftBtn)
 
 $goTop.on('click', function () {
   console.log('enter')
-  $('body').animate({
+  $('body,html').animate({
     scrollTop: '0px'
   }, 600)
 })
@@ -64,7 +64,7 @@ $scrollbtn.on('click', function () {
   $scrollpoint.each(function (index) {
     if (index === scrollNum) {
       var pointScrollTop = $(this).offset().top
-      $('body').animate({
+      $('body,html').animate({
         scrollTop: pointScrollTop - 50 + 'px'
       })
     }
