@@ -2000,6 +2000,7 @@ select {
     background-repeat: no-repeat; }
 
 .left-side {
+  display: none;
   position: fixed;
   top: 50%;
   left: 10px;
@@ -2028,7 +2029,7 @@ select {
   bottom: 0;
   width: 6px;
   right: 0;
-  z-index: 1000000;
+  z-index: 100000;
   background-color: #7a6e6e; }
 
 .right-side {
@@ -2056,6 +2057,42 @@ select {
         right: 35px;
         opacity: 1; }
     .right-side li .text {
+      position: absolute;
+      right: -35px;
+      opacity: 0;
+      padding: 0 10px;
+      white-space: nowrap;
+      z-index: -1;
+      font-size: 12px;
+      height: 35px;
+      background-color: #7a6e6e;
+      border-radius: 3px 0 0 3px;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
+
+.scorlltotop {
+  position: fixed;
+  bottom: 0;
+  right: 0px; }
+  .scorlltotop li {
+    position: relative;
+    margin-bottom: 1px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    background-color: #7a6e6e;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .scorlltotop li:hover {
+      background-color: #c81623;
+      border-radius: 0; }
+      .scorlltotop li:hover .text {
+        background-color: #c81623;
+        right: 35px;
+        opacity: 1; }
+    .scorlltotop li .text {
       position: absolute;
       right: -35px;
       opacity: 0;

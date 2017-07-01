@@ -3,6 +3,11 @@
 var $fixedSearch = $('.search-fixd')
 var $goTop = $('.goTop')
 
+
+// 左侧固定按钮
+
+var $leftBtn = $('.left-side')
+
 // 获取滚动按钮 
 var $scrollbtn = $('.scroll-btn')
 // 获取滚动位置 
@@ -14,7 +19,7 @@ var $scrollpoint = $('.costume')
 // console.log($scrollpoint.length)
 // console.log($scrollbtn.length)
 
- 
+
 var timerout
 
 $(window).on('scroll', function () {
@@ -23,10 +28,20 @@ $(window).on('scroll', function () {
   timerout = setTimeout(function () {
     if (WscrollTop > 650) {
       $fixedSearch.slideDown()
-    } 
-    if ( WscrollTop < 650) {
+    }
+    if (WscrollTop < 650) {
       $fixedSearch.slideUp()
+
+    }
+    if (WscrollTop > 1500) {
+console.log($leftBtn)
       
+      $leftBtn.fadeIn()
+    }
+
+    if (WscrollTop < 1500) {
+      $leftBtn.fadeOut()
+
     }
   }, 600)
 
@@ -34,34 +49,34 @@ $(window).on('scroll', function () {
 
 // 回到顶部
 
-$goTop.on('click',function(){
+$goTop.on('click', function () {
   console.log('enter')
   $('body').animate({
     scrollTop: '0px'
-  },600)
+  }, 600)
 })
 
 
 //  滚动到指定位置
 
- $scrollbtn.on('click',function(){
-   var scrollNum = $(this).index()
-    $scrollpoint.each(function(index) {
-      if(index === scrollNum) {
-        var pointScrollTop = $(this).offset().top
-        $('body').animate({
-          scrollTop: pointScrollTop-50+'px'
-        })
-      }
-    })
-    $scrollbtn.each(function(index){
-      if(index === scrollNum) {
-        $(this).addClass('active')
-      } else {
-        $(this).removeClass('active')
-      }
-    })
- })
+$scrollbtn.on('click', function () {
+  var scrollNum = $(this).index()
+  $scrollpoint.each(function (index) {
+    if (index === scrollNum) {
+      var pointScrollTop = $(this).offset().top
+      $('body').animate({
+        scrollTop: pointScrollTop - 50 + 'px'
+      })
+    }
+  })
+  $scrollbtn.each(function (index) {
+    if (index === scrollNum) {
+      $(this).addClass('active')
+    } else {
+      $(this).removeClass('active')
+    }
+  })
+})
 
 
 
@@ -92,4 +107,3 @@ $goTop.on('click',function(){
 // }
 // 采用了节流函数
 // window.addEventListener('scroll', throttle(realFunc, 500, 1000));
-
