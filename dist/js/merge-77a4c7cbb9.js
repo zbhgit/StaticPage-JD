@@ -504,7 +504,7 @@ function specialChange(specialNum) {
   specialLock = true
   $specialWrapper.find('.special-list').each(function (index) {
     if (index === specialNum) {
-      $(this).fadeIn(500, function () {
+      $(this).fadeIn('fast', function () {
         specialLock = false
       })
     } else {
