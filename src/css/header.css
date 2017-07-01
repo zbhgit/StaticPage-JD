@@ -89,3 +89,49 @@
       padding: 0 20px; }
       .header .classify .line + li a {
         margin-left: 0; }
+
+.fixed-search-wrapper {
+  margin: 0 auto;
+  width: 550px; }
+  .fixed-search-wrapper .fixed-search {
+    position: relative; }
+    .fixed-search-wrapper .fixed-search input {
+      padding-left: 4px;
+      height: 35px;
+      line-height: 35px;
+      width: 496px;
+      background-color: #efefef;
+      border: none;
+      outline: none; }
+    .fixed-search-wrapper .fixed-search .icon-camera {
+      position: absolute;
+      top: 4px;
+      right: 64px;
+      font-size: 20px;
+      color: #828282; }
+    .fixed-search-wrapper .fixed-search .icon-search {
+      padding: 0 16px;
+      font-size: 18px;
+      height: 35px;
+      line-height: 35px;
+      background-color: #f10215;
+      color: #fff; }
+
+.search-fixd {
+  position: fixed;
+  display: none;
+  z-index: 9999;
+  top: 0;
+  width: 100%;
+  padding-top: 8px;
+  height: 40px;
+  background-color: #fff;
+  border-bottom: 3px solid #f10214; }
+  .search-fixd div {
+    position: relative; }
+    .search-fixd div img {
+      position: absolute;
+      width: 125px;
+      height: 40px;
+      top: -1px;
+      left: 0; }

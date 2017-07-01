@@ -1,17 +1,69 @@
 .left-side {
-  position: absolute;
-  top: 84px;
+  position: fixed;
+  top: 50%;
   left: 10px;
-  width: 33px; }
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 33px;
+  z-index: 10000; }
   .left-side ul li {
     padding: 10px 0;
     text-align: center;
-    z-index: 100;
     border-bottom: 1px solid #bab4b4;
     width: 33px;
     color: #fff;
+    line-height: 1.2;
     background-color: #9e9696; }
     .left-side ul li.active {
       background-color: #db2837; }
+    .left-side ul li.scorlltotop {
+      background-color: #716060; }
   .left-side ul li:hover {
     background-color: #db2837; }
+
+.fixline {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+  right: 0;
+  z-index: 1000000;
+  background-color: #7a6e6e; }
+
+.right-side {
+  position: fixed;
+  top: 50%;
+  right: 0px;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%); }
+  .right-side li {
+    position: relative;
+    margin-bottom: 1px;
+    width: 35px;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    color: #fff;
+    background-color: #7a6e6e;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear; }
+    .right-side li:hover {
+      background-color: #c81623;
+      border-radius: 0; }
+      .right-side li:hover .text {
+        background-color: #c81623;
+        right: 35px;
+        opacity: 1; }
+    .right-side li .text {
+      position: absolute;
+      right: -35px;
+      opacity: 0;
+      padding: 0 10px;
+      white-space: nowrap;
+      z-index: -1;
+      font-size: 12px;
+      height: 35px;
+      background-color: #7a6e6e;
+      border-radius: 3px 0 0 3px;
+      -webkit-transition: all 0.3s linear;
+      transition: all 0.3s linear; }
