@@ -106,5 +106,3 @@ $prev.on('click', function () {
   }, 600)
 })
 
-
-//  倒计时程序
