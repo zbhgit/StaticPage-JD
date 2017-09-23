@@ -52,10 +52,10 @@
       .carousel-wrapper .ponit span.active {
         background-color: #db192a; }
 
-.main-ad .main-img {
+.main-carousel .main-img {
   font-size: 0; }
-  .main-ad .main-img img {
+  .main-carousel .main-img img {
     width: 390px;
     height: 130px; }
-    .main-ad .main-img img:first-child {
+    .main-carousel .main-img img:first-child {
       margin-right: 10px; }

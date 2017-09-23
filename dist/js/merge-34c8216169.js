@@ -404,8 +404,6 @@ $prev.on('click', function () {
 })
 
 
-//  倒计时程序
-
 var fnTimeCountDown = function (d, o) {
   var f = {
     zero: function (n) {
@@ -473,7 +471,7 @@ var sec = document.getElementById('sec')
 var mini = document.getElementById('mini')
 var hour = document.getElementById('hour')
 
-var d = Date.UTC(2017,6,28,23,00)
+var d = Date.UTC(2017,8,29,23,00)
 
 var obj = {
   sec: sec,
